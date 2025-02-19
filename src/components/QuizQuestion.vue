@@ -44,114 +44,88 @@ export default {
   margin: 20px auto;
   transition: all 0.3s ease;
   box-sizing: border-box;
-}
-
-/* Светлая тема */
-@media (prefers-color-scheme: light) {
-  .question-block {
-    background-color: #f8f9fa;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  }
-
-  .question {
-    color: #2c3e50;
-  }
-
-  .option label {
-    background-color: white;
-    border: 2px solid #e9ecef;
-    color: #2c3e50;
-  }
-
-  .option label:hover {
-    border-color: #4caf50;
-    background-color: #f1f8f1;
-  }
-}
-
-/* Темная тема */
-@media (prefers-color-scheme: dark) {
-  .question-block {
-    background-color: #1a1a1a;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
-  }
-
-  .question {
-    color: #ffffff;
-  }
-
-  .option label {
-    background-color: #2c2c2c;
-    border: 2px solid #3a3a3a;
-    color: #ffffff;
-  }
-
-  .option label:hover {
-    border-color: #4caf50;
-    background-color: #333333;
-  }
+  background: rgba(255, 255, 255, 0.95);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
 
 .question {
-  font-size: clamp(1rem, 4vw, 1.25rem);
-  margin-bottom: 20px;
+  font-size: clamp(1.2rem, 4vw, 1.4rem);
+  margin-bottom: 25px;
   font-weight: 600;
   padding: 0 10px;
+  color: #2196f3;
 }
 
 .option {
   display: block;
-  margin: 12px 0;
+  margin: 15px 0;
   padding: 0 5px;
+  transform: scale(1);
+  transition: transform 0.2s ease;
+}
+
+.option:hover {
+  transform: scale(1.02);
 }
 
 .option label {
   display: flex;
   align-items: center;
-  padding: clamp(8px, 2vw, 12px) clamp(12px, 3vw, 16px);
-  border-radius: 8px;
+  padding: clamp(12px, 2vw, 16px) clamp(16px, 3vw, 20px);
+  border-radius: 12px;
   cursor: pointer;
-  transition: all 0.2s ease;
-  font-size: clamp(0.9rem, 3vw, 1rem);
+  transition: all 0.3s ease;
+  font-size: clamp(0.95rem, 3vw, 1.1rem);
   word-break: break-word;
+  background: linear-gradient(to right, rgba(33, 150, 243, 0.1), rgba(76, 175, 80, 0.1));
+  border: 2px solid transparent;
+  position: relative;
+  overflow: hidden;
+}
+
+.option label:hover {
+  border-color: #2196f3;
+  background: linear-gradient(to right, rgba(33, 150, 243, 0.2), rgba(76, 175, 80, 0.2));
 }
 
 .option input[type='radio'] {
-  margin-right: 12px;
-  min-width: 18px;
-  min-height: 18px;
-  accent-color: #4caf50;
+  margin-right: 15px;
+  min-width: 20px;
+  min-height: 20px;
+  accent-color: #2196f3;
 }
 
 button {
-  background-color: #4caf50;
+  background: linear-gradient(45deg, #2196f3, #4caf50);
   color: white;
   border: none;
-  padding: clamp(10px, 2vw, 12px) clamp(20px, 4vw, 24px);
-  border-radius: 6px;
-  font-size: clamp(0.9rem, 3vw, 1rem);
+  padding: clamp(12px, 2vw, 16px) clamp(24px, 4vw, 32px);
+  border-radius: 12px;
+  font-size: clamp(1rem, 3vw, 1.1rem);
   cursor: pointer;
-  transition: background-color 0.2s ease;
-  margin-top: 16px;
+  transition: all 0.3s ease;
+  margin-top: 25px;
   width: 100%;
   max-width: 100%;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  box-shadow: 0 4px 15px rgba(33, 150, 243, 0.3);
 }
 
 button:hover {
-  background-color: #45a049;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(33, 150, 243, 0.4);
 }
 
 button:active {
-  transform: scale(0.98);
+  transform: translateY(0);
 }
 
 @media (max-width: 480px) {
   .question-block {
     margin: 10px auto;
-  }
-
-  .option {
-    margin: 8px 0;
+    padding: 15px;
   }
 }
 </style>
