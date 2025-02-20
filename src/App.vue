@@ -175,7 +175,8 @@ body {
 h1 {
   font-size: clamp(1.8rem, 5vw, 2.8rem);
   margin: 25px 0;
-  padding: 0 25px;
+  padding: 0px 25px;
+  padding-bottom: 10px;
   background: linear-gradient(45deg, #acacac 0%, #272727 100%);
   -webkit-background-clip: text;
   background-clip: text;
