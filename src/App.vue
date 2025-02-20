@@ -147,7 +147,7 @@ body {
 }
 
 .site-header {
-  background: linear-gradient(45deg, #1976d2, #388e3c);
+  background: linear-gradient(45deg, #acacac 0%, #272727 100%);
   padding: 15px 0;
   margin-bottom: 30px;
   position: sticky;
@@ -176,7 +176,7 @@ h1 {
   font-size: clamp(1.8rem, 5vw, 2.8rem);
   margin: 25px 0;
   padding: 0 25px;
-  background: linear-gradient(45deg, #1976d2, #388e3c);
+  background: linear-gradient(45deg, #acacac 0%, #272727 100%);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;

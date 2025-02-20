@@ -112,7 +112,7 @@ p {
 }
 
 .restart-btn {
-  background: linear-gradient(45deg, #1976d2, #388e3c);
+  background: linear-gradient(45deg, #acacac 0%, #272727 100%);
   color: white;
   border: none;
   padding: 12px 25px;

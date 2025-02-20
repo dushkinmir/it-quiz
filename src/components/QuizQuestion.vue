@@ -77,7 +77,7 @@ export default {
   transition: all 0.3s ease;
   font-size: clamp(0.95rem, 3vw, 1.1rem);
   word-break: break-word;
-  background: linear-gradient(to right, rgba(33, 150, 243, 0.1), rgba(76, 175, 80, 0.1));
+  background: linear-gradient(to right, rgba(33, 150, 243, 0.1), rgba(82, 212, 221, 0.1));
   border: 2px solid transparent;
   position: relative;
   overflow: hidden;
@@ -85,7 +85,7 @@ export default {
 
 .option label:hover {
   border-color: #2196f3;
-  background: linear-gradient(to right, rgba(33, 150, 243, 0.2), rgba(76, 175, 80, 0.2));
+  background: linear-gradient(to right, rgba(33, 150, 243, 0.2), rgba(89, 255, 255, 0.521));
 }
 
 .option input[type='radio'] {
@@ -96,7 +96,7 @@ export default {
 }
 
 button {
-  background: linear-gradient(45deg, #2196f3, #4caf50);
+  background: linear-gradient(45deg, #acacac 0%, #272727 100%);
   color: white;
   border: none;
   padding: clamp(12px, 2vw, 16px) clamp(24px, 4vw, 32px);
