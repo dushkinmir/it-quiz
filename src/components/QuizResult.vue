@@ -2,7 +2,7 @@
   <div class="quiz-result" :class="getResultClass">
     <div class="result-content">
       <h2>Ваш результат:</h2>
-      <p>{{ result }}</p>
+      <p v-html="result"></p>
       <button class="restart-btn" @click="$emit('restart')">Пройти тест заново</button>
     </div>
   </div>
